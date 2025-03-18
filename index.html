@@ -232,10 +232,10 @@
       <div class="section" id="section5">
         <div class="hero-body" >
         <div class="container">
-          <h2 class="title is-2">Overall Framework of StereoCrafter</h2>
+          <h2 class="title is-2">Overview of SpatialDreamer</h2>
           <img width='90%' src="static/images/flowmap.jpeg"/>
           <p style="color:black;text-align:justify">
-          Overview of the proposed method, given left view video, the target view video is rendered, encoded, and concatenated with multi-frame noise, followed by the denoising U-Net architecture (i.e., SVD).
+          Given left view video, the target view video is rendered, encoded, and concatenated with multi-frame noise, followed by the denoising U-Net architecture (i.e., SVD).
           The reference view images are fed into RefinerNet, through which the spatial features are extracted. The temporal interaction learning module integrates the latent features from long-temporal frames, and the deviation strength is projected as positional embedding and added to the time step embedding. 
           Finally, the variational autoencoder decoder decodes the result into a video clip.
           </p>
