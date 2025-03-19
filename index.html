@@ -238,18 +238,21 @@
         </div> -->
           
 <div class="hero-body is-centered">
-  <div style="width: 1280px; margin: 0 auto 50px auto; padding: 0;"> <!-- 调整 margin 和居中 -->
+  <div style="width: 1280px; margin: 0 auto 50px auto; padding: 0; text-align: center;"> <!-- 添加 text-align: center -->
     <table 
       border="0" 
       cellpadding="0" 
       cellspacing="0" 
-      style="width: 100%; color: #000; font-size: 25px;"
+      style="width: 100%; color: #000; font-size: 25px; border-collapse: collapse;"
     >
-      <tr>
-        <!-- 视频列（66% 宽度） -->
-        <td width="50%" valign="middle" style="padding-right: 20px;">
+      <tr style="vertical-align: middle; height: 100%;"> <!-- 增加垂直对齐和高度 -->
+        <!-- 视频列（50% 宽度） -->
+        <td 
+          width="50%" 
+          style="padding-right: 20px; vertical-align: middle; text-align: center;" <!-- 直接使用 CSS 对齐 -->
+        >
           <video 
-            style="width: 100%; height: auto;" 
+            style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle;" 
             loop 
             muted 
             autoplay 
@@ -261,18 +264,22 @@
           </video>
         </td>
 
-        <!-- 图片列（33% 宽度） -->
-        <td width="50%" valign="middle" style="padding-left: 20px;">
+        <!-- 图片列（50% 宽度） -->
+        <td 
+          width="50%" 
+          style="padding-left: 20px; vertical-align: middle; text-align: center;"
+        >
           <img 
             src="static/images/cover.jpeg" 
             alt="Teaser Image" 
-            style="width: 100%; height: auto; display: block;"
+            style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle;"
           >
         </td>
       </tr>
     </table>
   </div>
 </div>
+
 
 
           <p style="color:black;text-align:justify">
